@@ -1,5 +1,6 @@
 /* Database schema to keep the structure of entire database. */
 
+-- PROJECT 1
 CREATE TABLE animals (
  id INTEGER,
  name VARCHAR(255),
@@ -8,3 +9,6 @@ CREATE TABLE animals (
  neutered BOOLEAN,
  weight_kg DECIMAL(5,2)
 );
+
+-- PROJECT 2
+ALTER TABLE animals ADD COLUMN species VARCHAR(50);
