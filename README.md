@@ -105,9 +105,9 @@ In order to run this project you need:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[]**
-- [ ] **[]**
-- [ ] **[]**
+- [ ] **[Add join table for over_size]**
+- [ ] **[Add join table for sold_animals]**
+- [ ] **[Add join table for infected_animals]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
