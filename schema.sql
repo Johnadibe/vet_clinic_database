@@ -32,3 +32,18 @@ ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
 ALTER TABLE animals ADD COLUMN owners_id INT REFERENCES owners(id);
 
 -- PROJECT 4
+CREATE TABLE vets (
+ id BIGSERIAL PRIMARY KEY,
+ name VARCHAR(255),
+ age INTEGER,
+ date_of_graduation DATE
+);
+CREATE TABLE specializations (
+ vets_id INTEGER REFERENCES vets (id),
+ species_id INTEGER REFERENCES species (id)
+);
+CREATE TABLE visits (
+ animals_id INTEGER REFERENCES animals (id),
+ vets_id INTEGER REFERENCES vets (id),
+ date_of_visit DATE
+);
