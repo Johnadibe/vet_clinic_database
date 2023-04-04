@@ -22,7 +22,7 @@ CREATE TABLE owners (
 
 CREATE TABLE species (
  id BIGSERIAL PRIMARY KEY,
- name VARCHAR(255)
+ name VARCHAR(300)
 );
 
 ALTER TABLE animals DROP COLUMN id;
@@ -34,7 +34,7 @@ ALTER TABLE animals ADD COLUMN owners_id INT REFERENCES owners(id);
 -- PROJECT 4
 CREATE TABLE vets (
  id BIGSERIAL PRIMARY KEY,
- name VARCHAR(255),
+ name VARCHAR(300),
  age INTEGER,
  date_of_graduation DATE
 );
